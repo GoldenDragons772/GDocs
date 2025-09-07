@@ -1,0 +1,8 @@
+{
+  "label": "CNC",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Resource for SCGSSM CNC Machine"
+  }
+}
