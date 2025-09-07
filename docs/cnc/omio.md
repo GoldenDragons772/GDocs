@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 # Omio X6-2200 CNC
 
 ![Omio X6-2200 CNC Machine](/img/omio-x6-2200-cnc.jpg)

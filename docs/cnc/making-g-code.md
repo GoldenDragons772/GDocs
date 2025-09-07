@@ -38,8 +38,7 @@ Here's an tutorial that covers G-Code fundamentals with Inventor CAM:
   src="https://www.youtube.com/embed/lcL_RLy2r7s" 
   title="G-Code Tutorial" 
   frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;" >
 </iframe>
 
 

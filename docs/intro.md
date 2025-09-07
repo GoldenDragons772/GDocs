@@ -1,47 +1,16 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
-# Tutorial Intro
+# GDocs
+Welcome to **GDocs** a public internal documentation site for FTC 772.
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## Purpose?
+This site is intended to be a centralized location for documentation related to FTC 772 projects, including Software, Mechanical, and Outreach. It is designed to help team members quickly find the information they need to work effectively on our team.
 
-## Getting Started
+## About the Team
+We are team 772, Golden Dragons from the South Carolina Governor’s School for Science and Mathematics in Hartsville, South Carolina. Our team has an expansive history that dates back to the first FTC season in 2005. For more information about our team, robots, awards, and sponsors please visit our website: https://ftc772.org/
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+### Mission Statement
+Our mission is to enhance the general knowledge and ability of students in South Carolina in regards to STEM. As Govies (and students from all over the state) we have an inherent responsibility to give back to the communities that help foster our success.
