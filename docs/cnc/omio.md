@@ -16,13 +16,14 @@ CAM is the equivalent of CAD for CNC. It makes instructions for the CNC to follo
 | AutoDesk | Inventor CAM | For Students |
 | Dassault Systèmes | Solidworks HSM CAM | For Students |
 
-I would recommend using Inventor CAM, as I have found fewer problems with using it, and this document will only showcase the use of Inventor, but SolidWorks has a similar workflow compared to Inventor and can also be used.
 
 ### Inventor CAM
 
 ![Inventor CAM Interface](/img/inventor-cam-screenshot.jpg)
 
+:::note
 I would recommend using Inventor CAM, as I have found fewer problems with using it, and this document will only showcase the use of Inventor, but SolidWorks has a similar workflow compared to Inventor and can also be used.
+:::
 
 ## G-Code
 

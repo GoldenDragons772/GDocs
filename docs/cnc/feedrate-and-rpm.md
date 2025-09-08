@@ -28,4 +28,6 @@ RPM (Rotations Per Minute) is the speed the spindle spins. We found that 22,000 
 | Aluminum | 4mm | 30 mm/min | 22000 | Yes |
 | Wood | 4mm | 30-45 mm/min | 22000 | No |
 
+:::tip
 These are units we found to work better for the machine, and are generally recommended to start with these. If you found better feeds and RPMs, I would recommend documenting them for future use.
+:::
