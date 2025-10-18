@@ -19,6 +19,7 @@ RPM (Rotations Per Minute) is the speed the spindle spins. We found that 22,000 
 | Lexan | 6mm | 400-600 mm/min | 22000 | No |
 | Aluminum | 6mm | 150-400 mm/min | 22000 | Yes |
 | Wood | 6mm | 250-400 mm/min | 22000 | No |
+| Wood | 4mm | 300 mm/min | 22000 | No |
 
 ## Drilling
 
