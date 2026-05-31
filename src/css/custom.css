@@ -957,3 +957,639 @@ a.sidebar-icon-cnc-doc .doccard-svg-icon::before {
 a.sidebar-icon-handbook-doc .doccard-svg-icon::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3Cline x1='16' y1='13' x2='8' y2='13'/%3E%3Cline x1='16' y1='17' x2='8' y2='17'/%3E%3Cpolyline points='10 9 9 9 8 9'/%3E%3C/svg%3E");
 }
+
+/* ==========================================================================
+   MOBILE RESPONSIVE STYLES
+   ========================================================================== */
+
+/* ---- Mobile Navbar / Hamburger Menu ---- */
+.navbar__toggle {
+  color: var(--brand-gold) !important;
+}
+
+.navbar-sidebar {
+  background: rgba(12, 12, 12, 0.97) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+}
+
+.navbar-sidebar .navbar-sidebar__brand {
+  background: transparent !important;
+  border-bottom: 1px solid var(--brand-border-color) !important;
+  padding: 1rem 1.2rem !important;
+}
+
+.navbar-sidebar .navbar-sidebar__items {
+  background: transparent !important;
+}
+
+.navbar-sidebar .menu__link {
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.85rem 1.2rem;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.85) !important;
+  transition: all 0.25s ease;
+}
+
+.navbar-sidebar .menu__link:hover,
+.navbar-sidebar .menu__link--active {
+  background: rgba(255, 186, 36, 0.1) !important;
+  color: var(--brand-gold) !important;
+}
+
+.navbar-sidebar .navbar-sidebar__back {
+  color: var(--brand-gold) !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+}
+
+.navbar-sidebar__close {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* ---- Tablet Breakpoint (max-width: 996px) ---- */
+@media screen and (max-width: 996px) {
+  /* Landing Page */
+  .landing-container {
+    padding: 3rem 1.5rem;
+  }
+
+  .landing-title-gdocs {
+    font-size: 4.5rem;
+  }
+
+  .landing-subtitle {
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  .landing-subtitle-gd {
+    font-size: 1.3em;
+    margin-left: 0.5rem;
+  }
+
+  .landing-tagline {
+    font-size: 1.1rem;
+    max-width: 500px;
+    padding: 0 1rem;
+  }
+
+  .landing-buttons {
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .landing-button-primary,
+  .landing-button-secondary {
+    padding: 0.85rem 1.8rem !important;
+    font-size: 0.82rem !important;
+  }
+
+  .landing-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .liquid-glass-card {
+    min-height: 260px;
+    padding: 1.8rem 1.6rem 1.6rem !important;
+  }
+
+  /* Landing Stats */
+  .landing-stats {
+    gap: 2.5rem;
+    padding: 2rem 1rem 0.5rem;
+  }
+
+  .stat-num {
+    font-size: 2rem;
+  }
+
+  /* Landing Logo */
+  .landing-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Blobs - scale down */
+  .blob-1 {
+    width: 350px;
+    height: 350px;
+  }
+
+  .blob-2 {
+    width: 280px;
+    height: 280px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 3rem 1.5rem 2rem !important;
+  }
+
+  .footer__links {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer__col {
+    text-align: center;
+  }
+
+  .footer__title {
+    font-size: 1.1rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .footer__bottom {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+  }
+
+  /* Markdown Content */
+  .markdown h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .markdown h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .markdown h3 {
+    font-size: 1.3rem;
+  }
+
+  .markdown h4 {
+    font-size: 1.05rem;
+  }
+
+  /* Pagination */
+  .pagination-nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .pagination-nav__link {
+    width: 100%;
+  }
+
+  /* Doc sidebar */
+  .theme-doc-sidebar-container {
+    border-right: none !important;
+  }
+}
+
+/* ---- Mobile Breakpoint (max-width: 768px) ---- */
+@media screen and (max-width: 768px) {
+  /* Landing Page */
+  .landing-container {
+    padding: 2.5rem 1.2rem;
+  }
+
+  .landing-title-gdocs {
+    font-size: 3.5rem;
+  }
+
+  .landing-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .landing-subtitle-gd {
+    font-size: 1.2em;
+    margin-left: 0.4rem;
+  }
+
+  .landing-tagline {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .landing-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    gap: 0.8rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .landing-button-primary,
+  .landing-button-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem 1.5rem !important;
+    font-size: 0.8rem !important;
+    justify-content: center;
+  }
+
+  .landing-grid {
+    gap: 1.2rem;
+    padding: 0;
+  }
+
+  .liquid-glass-card {
+    min-height: 220px;
+    padding: 1.5rem 1.3rem 1.3rem !important;
+    border-radius: 18px !important;
+  }
+
+  .landing-card-title {
+    font-size: 1.25rem;
+  }
+
+  .landing-card-desc {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin-bottom: 1.4rem;
+  }
+
+  .landing-card-icon {
+    padding: 0.4rem;
+    border-radius: 8px;
+  }
+
+  .landing-card-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Landing Stats */
+  .landing-stats {
+    gap: 2rem;
+  }
+
+  .stat-num {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 0.65rem;
+  }
+
+  /* Landing Logo */
+  .landing-logo {
+    width: 85px;
+    height: 85px;
+  }
+
+  .landing-logo-container {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Blobs */
+  .blob-1 {
+    width: 280px;
+    height: 280px;
+  }
+
+  .blob-2 {
+    width: 220px;
+    height: 220px;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 0.5rem 0.8rem !important;
+  }
+
+  .navbar__title {
+    font-size: 1.2rem;
+  }
+
+  .navbar__logo {
+    height: 1.8rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 2.5rem 1.2rem 1.5rem !important;
+  }
+
+  .footer__link-item {
+    font-size: 0.82rem;
+  }
+
+  .footer__copyright {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+  }
+
+  /* Markdown Content */
+  .markdown h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 0 15px rgba(255, 186, 36, 0.2);
+  }
+
+  .markdown h2 {
+    font-size: 1.4rem;
+    margin-top: 1.8rem;
+  }
+
+  .markdown h3 {
+    font-size: 1.15rem;
+    margin-top: 1.5rem;
+  }
+
+  .markdown h4 {
+    font-size: 0.95rem;
+    letter-spacing: 0.15em;
+  }
+
+  .markdown {
+    font-size: 0.92rem;
+  }
+
+  /* Code Blocks */
+  .theme-code-block {
+    border-radius: 10px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
+    font-size: 0.82rem;
+  }
+
+  /* Admonitions */
+  .alert {
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+  }
+
+  /* Cards in docs */
+  .card {
+    border-radius: 12px !important;
+    padding: 1rem !important;
+  }
+
+  /* Menu / Sidebar mobile */
+  .menu {
+    padding: 1.5rem 1rem !important;
+  }
+
+  .menu__link {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  /* Doc page breadcrumbs */
+  .theme-doc-breadcrumbs {
+    font-size: 0.82rem;
+  }
+
+  /* Table of Contents */
+  .table-of-contents {
+    font-size: 0.82rem;
+  }
+}
+
+/* ---- Small Mobile Breakpoint (max-width: 480px) ---- */
+@media screen and (max-width: 480px) {
+  .landing-title-gdocs {
+    font-size: 2.8rem;
+  }
+
+  .landing-subtitle {
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+  }
+
+  .landing-subtitle-gd {
+    font-size: 1.1em;
+  }
+
+  .landing-tagline {
+    font-size: 0.9rem;
+  }
+
+  .landing-buttons {
+    max-width: 280px;
+  }
+
+  .landing-button-primary,
+  .landing-button-secondary {
+    padding: 0.8rem 1.2rem !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.1em;
+  }
+
+  .liquid-glass-card {
+    min-height: 200px;
+    padding: 1.2rem 1.1rem 1.1rem !important;
+    border-radius: 14px !important;
+  }
+
+  .landing-card-title {
+    font-size: 1.1rem;
+  }
+
+  .landing-card-desc {
+    font-size: 0.82rem;
+  }
+
+  .landing-card-link {
+    font-size: 0.7rem;
+  }
+
+  /* Landing Stats */
+  .landing-stats {
+    gap: 1.5rem;
+    padding: 1.5rem 0.5rem 0.5rem;
+  }
+
+  .stat-num {
+    font-size: 1.5rem;
+  }
+
+  /* Logo */
+  .landing-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .landing-logo-container {
+    margin-bottom: 1rem;
+  }
+
+  /* Blobs - very small screens */
+  .blob-1 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .blob-2 {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* Navbar */
+  .navbar__title {
+    font-size: 1rem;
+  }
+
+  .navbar__logo {
+    height: 1.5rem;
+    margin-right: 0.4rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 2rem 1rem 1.2rem !important;
+  }
+
+  .footer__title {
+    font-size: 1rem !important;
+  }
+
+  .footer__link-item {
+    font-size: 0.78rem;
+  }
+
+  .footer__copyright {
+    font-size: 0.65rem;
+  }
+
+  .footer__bottom {
+    margin-top: 2rem;
+    padding-top: 1.2rem;
+  }
+
+  /* Markdown Content */
+  .markdown h1 {
+    font-size: 1.5rem;
+  }
+
+  .markdown h2 {
+    font-size: 1.25rem;
+  }
+
+  .markdown h3 {
+    font-size: 1.05rem;
+  }
+
+  .markdown h4 {
+    font-size: 0.88rem;
+  }
+
+  .markdown {
+    font-size: 0.88rem;
+    line-height: 1.65;
+  }
+
+  /* Code Blocks */
+  .theme-code-block {
+    border-radius: 8px !important;
+    font-size: 0.78rem;
+  }
+
+  /* Pagination */
+  .pagination-nav__link {
+    border-radius: 10px !important;
+    padding: 0.8rem 1rem;
+  }
+
+  .pagination-nav__sublabel {
+    font-size: 0.7rem;
+  }
+
+  .pagination-nav__label {
+    font-size: 0.85rem;
+  }
+}
+
+/* ---- Touch-friendly improvements ---- */
+@media (hover: none) and (pointer: coarse) {
+  /* Larger tap targets */
+  .menu__link {
+    padding: 0.7rem 1rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar__item {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__link-item {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .landing-card-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .pagination-nav__link {
+    min-height: 48px;
+  }
+
+  /* Disable hover-only transforms on touch */
+  .card:hover,
+  .liquid-glass-card:hover {
+    transform: none !important;
+  }
+
+  .menu__link:hover {
+    transform: none;
+  }
+
+  .navbar__brand:hover {
+    transform: none;
+  }
+}
+
+/* ---- Landscape phone orientation fix ---- */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .landing-main {
+    min-height: auto;
+  }
+
+  .landing-container {
+    padding: 1.5rem 2rem;
+  }
+
+  .landing-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .landing-logo-container {
+    margin-bottom: 0.8rem;
+  }
+
+  .landing-title-gdocs {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+
+  .landing-subtitle {
+    margin-bottom: 1rem;
+  }
+
+  .landing-tagline {
+    margin-bottom: 1.5rem;
+  }
+
+  .landing-buttons {
+    margin-bottom: 2rem;
+  }
+}
