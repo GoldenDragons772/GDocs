@@ -91,9 +91,10 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          href: '/admin/',
+          href: 'https://docs.ftc772.org/admin/',
           label: 'Edit Site',
           position: 'right',
+          target: '_self',
         },
         {
           href: 'https://github.com/GoldenDragons772/GDocs',
