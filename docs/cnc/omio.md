@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+sidebar_class_name: sidebar-icon-cnc-doc
 ---
 # Omio X6-2200 CNC
 

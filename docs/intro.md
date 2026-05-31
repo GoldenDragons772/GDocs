@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /
+sidebar_class_name: sidebar-icon-intro
 ---
 
 # GDocs

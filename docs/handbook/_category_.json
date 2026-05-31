@@ -1,5 +1,6 @@
 {
   "label": "Handbook",
+  "className": "sidebar-icon-handbook",
   "link": {
     "type": "generated-index",
     "description": "FTC 772 Handbook"

@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+sidebar_class_name: sidebar-icon-setup
+---
+
 # Development Environment
 
 ## Advanced Users

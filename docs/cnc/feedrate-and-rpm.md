@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+sidebar_class_name: sidebar-icon-cnc-doc
 ---
 
 # Feedrate and RPM
