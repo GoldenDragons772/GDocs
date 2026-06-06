@@ -12,7 +12,7 @@ We are FTC Team 772, Golden Dragons from the South Carolina Governor’s School 
 We are dedicated to motivating, inspiring, and advancing the pursuit of STEM learning in South Carolina. By collaborating with teams around the world, emphasizing FIRST ideals and Gracious Professionalism️, maintaining an inclusive and tight-knit community within our team, we create an environment where we can all improve together!
 
 ### 2026-2027 Golden Dragons Leadership
-Team Captains: Marie Alvarez, Shreeji Patel, Victor Zhang, Shree Patel, Divya Rustgi, Alex Cotran
-Mechanical Captains: Marie Alvarez, Shreeji Patel
-Software Captain: Victor Zhang
-Outreach/Portfolio Captain: Shree Patel
+Team Captains: Marie Alvarez, Shreeji Patel, Victor Zhang, Shree Patel, Divya Rustgi, Alex Cotran  
+Mechanical Captains: Marie Alvarez, Shreeji Patel  
+Software Captain: Victor Zhang  
+Outreach/Portfolio Captain: Shree Patel  
