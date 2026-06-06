@@ -31,7 +31,7 @@ These programs take your 3D model and machining parameters to automatically gene
 
 ## Learning G-Code Programming
 
-Here's an tutorial that covers G-Code fundamentals with Inventor CAM:
+Here's our tutorial that covers G-Code fundamentals using Inventor CAM:
 
 <iframe 
   width="560" 
