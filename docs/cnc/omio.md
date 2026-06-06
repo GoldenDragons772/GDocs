@@ -6,7 +6,8 @@ sidebar_class_name: sidebar-icon-cnc-doc
 
 ![Omio X6-2200 CNC Machine](/img/omio-x6-2200-cnc.jpg)
 
-The is a desktop portable CNC that is capable of doing Wood and Metal work.I started my work on the CNC in January 2024 during the interim. At the time, I figured out how to do simple things like jogging the CNC (moving) and also running simple G-Codes that would make patterns on wood. There was still a lot to learn, as I had only touched the surface of operating the CNC.
+The Omio X6-2200 is a desktop portable CNC that is capable of cutting/drilling/routing wood, metal, and plastics. I started my work on the CNC in January 2024 during the interim. At the time, I figured out how to do simple things like jogging the CNC (moving) and also running simple G-Code that would make patterns on wood. There was still a lot to learn, as I had only touched the surface of operating the CNC.  
+- Sanjith Sunil '25
 
 ## CAM
 
@@ -23,7 +24,7 @@ CAM is the equivalent of CAD for CNC. It makes instructions for the CNC to follo
 ![Inventor CAM Interface](/img/inventor-cam-screenshot.jpg)
 
 :::note
-I would recommend using Inventor CAM, as I have found fewer problems with using it, and this document will only showcase the use of Inventor, but SolidWorks has a similar workflow compared to Inventor and can also be used.
+I would recommend using Inventor CAM, as there are fewer problems with using it, and this document will only showcase the use of Inventor, but SolidWorks has a similar workflow compared to Inventor and can also be used.
 :::
 
 ## G-Code
