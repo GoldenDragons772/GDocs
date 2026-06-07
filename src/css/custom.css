@@ -1267,9 +1267,11 @@ html:has(.menu__link--active[href*="software"]),
     padding: 2.5rem 1.2rem;
   }
 
-  .landing-title-gdocs {
-    font-size: 3.5rem;
-  }
+  .landing-title-gdocs, .landing-title-gdocs-logo {
+
+   font-size: 3.5rem;
+
+ }
 
   .landing-subtitle {
     font-size: 0.75rem;
@@ -1466,9 +1468,9 @@ html:has(.menu__link--active[href*="software"]),
 
 /* ---- Small Mobile Breakpoint (max-width: 480px) ---- */
 @media screen and (max-width: 480px) {
-  .landing-title-gdocs {
-    font-size: 2.8rem;
-  }
+  .landing-title-gdocs, .landing-title-gdocs-logo {
+   font-size: 2.8rem;
+ }
 
   .landing-subtitle {
     font-size: 0.65rem;
@@ -1685,8 +1687,9 @@ html:has(.menu__link--active[href*="software"]),
     margin-bottom: 0.8rem;
   }
 
-  .landing-title-gdocs {
-    font-size: 2.5rem;
+  .landing-title-gdocs, .landing-title-gdocs-logo {
+
+   font-size: 2.5rem;
     margin-bottom: 0;
   }
 
@@ -1843,7 +1846,7 @@ li[class*="sidebar-icon-"].theme-doc-sidebar-item-link > .menu__link::before {
   75% { --gradient-color: rgba(174, 198, 207, 0.25); }
 }
 
-.home-page-body {
+.home-page-body::before {
   animation: cycleGradientColor 30s infinite ease-in-out;
 }
 
