@@ -1,0 +1,9 @@
+{
+  "label": "Mechanical",
+  "position": 2,
+  "className": "sidebar-icon-cnc",
+  "link": {
+    "type": "doc",
+    "id": "mechanical/index"
+  }
+}

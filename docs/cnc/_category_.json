@@ -1,9 +1,0 @@
-{
-  "label": "CNC",
-  "position": 5,
-  "className": "sidebar-icon-cnc",
-  "link": {
-    "type": "generated-index",
-    "description": "Resource for SCGSSM CNC Machine"
-  }
-}

@@ -1,0 +1,9 @@
+{
+  "label": "Manufacturing",
+  "position": 2,
+  "className": "sidebar-icon-wrench",
+  "link": {
+    "type": "doc",
+    "id": "mechanical/manufacturing/index"
+  }
+}

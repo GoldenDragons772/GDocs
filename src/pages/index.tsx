@@ -2,6 +2,7 @@ import type {ReactNode} from 'react';
 import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import GDocsLogo from '@site/src/components/GDocsLogo';
 
 function CodeIcon() {
   return (
@@ -39,11 +40,16 @@ function ArrowRightIcon() {
   );
 }
 
+import Head from '@docusaurus/Head';
+
 export default function Home(): ReactNode {
   return (
     <Layout
       title="GDocs"
-      description="GDocs — Centralized Documentation Hub for FTC 772 Golden Dragons Robotics.">
+      description="GDocs - Centralized Documentation Hub for FTC 772 Golden Dragons Robotics.">
+      <Head>
+        <body className="home-page-body" />
+      </Head>
       <main className="landing-main">
         {/* Floating background liquid blobs */}
         <div className="liquid-blob-container">
@@ -52,15 +58,11 @@ export default function Home(): ReactNode {
         </div>
 
         <div className="landing-container">
-          {/* Logo Image */}
-          <div className="landing-logo-container">
-            <img src="/img/logo.png" alt="Golden Dragons Logo" className="landing-logo" />
+          {/* Logo Component */}
+          <div className="landing-logo-container" style={{ marginBottom: '2rem', marginTop: '-1rem' }}>
+            <GDocsLogo className="landing-title-gdocs-logo" style={{ filter: 'drop-shadow(0 15px 30px rgba(var(--brand-color-rgb), 0.4)) drop-shadow(0 4px 6px rgba(0,0,0,0.5))' }} />
           </div>
 
-          {/* Brand Heading */}
-          <h1 className="landing-title-gdocs">
-            GDocs
-          </h1>
           <div className="landing-subtitle">
             CREATED BY <span className="landing-subtitle-gd"><span className="landing-subtitle-gd-golden">GOLDEN</span>&nbsp;<span className="landing-subtitle-gd-dragons">DRAGONS</span></span>
           </div>
@@ -80,48 +82,23 @@ export default function Home(): ReactNode {
 
           {/* Cards Grid */}
           <div className="landing-grid">
-            {/* Software Card */}
-            <div className="card liquid-glass-card">
-              <div className="landing-card-content">
-                <div className="landing-card-header">
-                  <div className="landing-card-icon">
-                    <CodeIcon />
-                  </div>
-                  <h3 className="landing-card-title">Software</h3>
-                </div>
-                <p className="landing-card-desc">
-                  Setting up Android Studio for robotics development, configuring robot automation algorithms, and building OpenCV/vision pipelines.
-                </p>
-              </div>
-              <div className="landing-card-footer">
-                <Link className="landing-card-link" to="/docs/android-studio/setup">
-                  Setup Dev Environment <ArrowRightIcon />
-                </Link>
-              </div>
-            </div>
-
-            {/* CNC & CAD Card */}
-            <div className="card liquid-glass-card">
+            {/* Mechanical Card */}
+            <Link to="/docs/mechanical" className="card liquid-glass-card card-mechanical" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="landing-card-content">
                 <div className="landing-card-header">
                   <div className="landing-card-icon">
                     <SettingsIcon />
                   </div>
-                  <h3 className="landing-card-title">CNC & CAD</h3>
+                  <h3 className="landing-card-title">Mechanical</h3>
                 </div>
                 <p className="landing-card-desc">
-                  Detailed guides for manufacturing with the Omio X6-2200 CNC router, configuring Mach3 controller software, and mechanical handbooks.
+                  Detailed guides for manufacturing with the Omio X6-2200 CNC router, CAD basics, and Glowforge/XTool operations.
                 </p>
               </div>
-              <div className="landing-card-footer">
-                <Link className="landing-card-link" to="/docs/cnc/omio">
-                  Manufacturing Setup <ArrowRightIcon />
-                </Link>
-              </div>
-            </div>
+            </Link>
 
             {/* Handbook Card */}
-            <div className="card liquid-glass-card">
+            <Link to="/docs/handbook" className="card liquid-glass-card card-handbook" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="landing-card-content">
                 <div className="landing-card-header">
                   <div className="landing-card-icon">
@@ -133,12 +110,22 @@ export default function Home(): ReactNode {
                   Team rules, scheduling protocols, communication systems, outreach hour tracking guidelines, and team structures for GSSM robotics.
                 </p>
               </div>
-              <div className="landing-card-footer">
-                <Link className="landing-card-link" to="/docs/handbook/about-the-team">
-                  Team Handbook <ArrowRightIcon />
-                </Link>
+            </Link>
+
+            {/* Software Card */}
+            <Link to="/docs/software" className="card liquid-glass-card card-software" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <div className="landing-card-content">
+                <div className="landing-card-header">
+                  <div className="landing-card-icon">
+                    <CodeIcon />
+                  </div>
+                  <h3 className="landing-card-title">Software</h3>
+                </div>
+                <p className="landing-card-desc">
+                  Setting up Android Studio for robotics development, configuring robot automation algorithms, and building OpenCV/vision pipelines.
+                </p>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </main>

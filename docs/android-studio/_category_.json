@@ -1,8 +1,0 @@
-{
-  "label": "Android Studio",
-  "className": "sidebar-icon-android",
-  "link": {
-    "type": "generated-index",
-    "description": "Resource for Android Studio Development"
-  }
-}

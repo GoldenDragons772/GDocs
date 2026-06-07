@@ -1,8 +1,9 @@
 {
   "label": "Handbook",
+  "position": 1,
   "className": "sidebar-icon-handbook",
   "link": {
-    "type": "generated-index",
-    "description": "FTC 772 Handbook"
+    "type": "doc",
+    "id": "handbook/index"
   }
 }

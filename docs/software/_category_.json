@@ -1,0 +1,9 @@
+{
+  "label": "Software",
+  "position": 3,
+  "className": "sidebar-icon-android",
+  "link": {
+    "type": "doc",
+    "id": "software/index"
+  }
+}
