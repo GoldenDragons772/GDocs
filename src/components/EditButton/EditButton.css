@@ -1,0 +1,122 @@
+/* ============================================
+   Edit Button - Glassmorphism Floating Button
+   ============================================ */
+
+.edit-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 1rem 0.5rem 0.75rem;
+  border-radius: 10px;
+  text-decoration: none !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+
+  /* Glassmorphism */
+  background: rgba(255, 186, 36, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 186, 36, 0.2);
+  color: rgba(255, 255, 255, 0.75) !important;
+
+  /* Smooth transitions */
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Subtle inner highlight */
+.edit-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* Hover state */
+.edit-button:hover {
+  background: rgba(255, 186, 36, 0.15);
+  border-color: rgba(255, 186, 36, 0.5);
+  color: var(--brand-gold, #FFBA24) !important;
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 20px rgba(255, 186, 36, 0.2),
+    0 0 12px rgba(255, 186, 36, 0.1);
+}
+
+/* Icon */
+.edit-button__icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.edit-button:hover .edit-button__icon {
+  transform: rotate(-8deg) scale(1.1);
+}
+
+/* Label */
+.edit-button__label {
+  line-height: 1;
+}
+
+/* ============================================
+   Edit Button Wrapper (positions it in the doc)
+   ============================================ */
+
+.edit-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+  margin-top: -0.25rem;
+}
+
+/* ============================================
+   Light Theme Overrides
+   ============================================ */
+
+[data-theme='light'] .edit-button {
+  background: rgba(176, 112, 0, 0.06);
+  border-color: rgba(176, 112, 0, 0.2);
+  color: rgba(0, 0, 0, 0.55) !important;
+}
+
+[data-theme='light'] .edit-button:hover {
+  background: rgba(176, 112, 0, 0.12);
+  border-color: rgba(176, 112, 0, 0.45);
+  color: var(--ifm-color-primary, #b07000) !important;
+  box-shadow:
+    0 6px 20px rgba(176, 112, 0, 0.15),
+    0 0 12px rgba(176, 112, 0, 0.08);
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+@media (max-width: 768px) {
+  .edit-button__label {
+    /* Hide label on small screens, show icon only */
+    display: none;
+  }
+
+  .edit-button {
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+}

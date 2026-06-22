@@ -12,7 +12,11 @@ collections:
     label: "Documentation"
     folder: "docs"
     create: true
+    nested:
+      depth: 10
+      summary: "{{title}}"
     slug: "{{slug}}"
+    meta: { path: { widget: "string", label: "Path", index_file: "index" } }
     fields:
       - {label: "Title", name: "title", widget: "string", required: false}
       - {label: "Sidebar Position", name: "sidebar_position", widget: "number", required: false}
