@@ -17,12 +17,14 @@ You will need this link: [Setting Up Mach3 | OMIO CNC Router x8 (USB)](https://d
 
 Watch our set-up video:
 
-<iframe 
-  width="560" 
-  height="315" 
-  src="https://www.youtube.com/embed/w4KqTslQPeA" 
-  title="Mach3 Setup Tutorial" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;"
-  >
-</iframe>
+<div className="responsive-video-container">
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/w4KqTslQPeA" 
+    title="Mach3 Setup Tutorial" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;"
+    >
+  </iframe>
+</div>

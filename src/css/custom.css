@@ -1,4 +1,4 @@
-﻿/**
+/**
  * FTC 772 - Golden Dragons Branding Stylesheet
  * Custom CSS for GDocs Docusaurus Documentation site
  */
@@ -180,12 +180,19 @@ body::before {
 }
 
 /* Navbar / Header */
-/* Make Navbar glass */
+/* Make Navbar glass without breaking position: fixed for children */
 .navbar {
   background: rgba(10, 10, 10, 0.3) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: -1;
 }
 
 [data-theme='light'] .navbar {
@@ -1878,4 +1885,36 @@ li[class*="sidebar-icon-"].theme-doc-sidebar-item-link > .menu__link::before {
   );
   background-size: 400% auto;
   animation: dragonPastelSwipe 8s linear infinite;
+}
+
+/* Responsive Video Container */
+.responsive-video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  margin: 2rem 0;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.responsive-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Desktop variations */
+@media screen and (min-width: 996px) {
+  .responsive-video-container {
+    padding-bottom: 0;
+    height: 450px;
+    width: 800px;
+    max-width: 100%;
+    margin: 3rem auto; /* Center on desktop */
+  }
 }

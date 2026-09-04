@@ -35,14 +35,16 @@ These programs take your 3D model and machining parameters to automatically gene
 
 Here's our tutorial that covers G-Code and CAM fundamentals using Inventor CAM:
 
-<iframe 
-  width="560" 
-  height="315" 
-  src="https://www.youtube.com/embed/lcL_RLy2r7s" 
-  title="G-Code Tutorial" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;" >
-</iframe>
+<div className="responsive-video-container">
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/lcL_RLy2r7s" 
+    title="G-Code Tutorial" 
+    frameBorder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;" >
+  </iframe>
+</div>
 
 ## Feedrate
 
